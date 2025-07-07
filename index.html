@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cafe-Coffee Day</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav id="main-nav">
+    <h1 class="brand">Cafe-Coffee Day</h1>
+  </nav>
+
+  <div class="page">
+    <!-- Order Summary -->
+    <section class="order box">
+      <h2 class="box-title">Your Order Summary</h2>
+      <ul class="items">
+        <li class="item">
+          <div class="item-quantity">1x</div>
+          <div class="item-title">Cappuccino</div>
+          <div class="item-price">$0.99</div>
+          <ul class="item-option-list">
+            <li class="item-option">Light foam</li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="item-quantity">1x</div>
+          <div class="item-title">Cappuccino</div>
+          <div class="item-price">$0.99</div>
+          <ul class="item-option-list">
+            <li class="item-option">Light foam</li>
+          </ul>
+        </li>
+        <li class="item">
+          <div class="item-quantity">1x</div>
+          <div class="item-title">Cappuccino</div>
+          <div class="item-price">$0.99</div>
+          <ul class="item-option-list">
+            <li class="item-option">Light foam</li>
+          </ul>
+        </li>
+      </ul>
+      <div class="add-item">
+        <button class="add-item-btn">Add More Items</button>
+      </div>
+    </section>
+
+    <!-- Customer Info -->
+    <section class="payment">
+      <div class="name-box box">
+        <h2 class="box-title">Customer Info</h2>
+        <div class="input-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your name" class="user-input" />
+        </div>
+      </div>
+
+      <!-- Payment Details -->
+      <div class="cc-box box">
+        <h2 class="box-title">Payment Details</h2>
+        <label for="cc-number" class="user-input-label">Credit Card Number</label>
+        <input type="text" id="cc-number" name="cc-number" placeholder="Enter your credit card number" class="user-input short-input" />
+
+        <label for="cvv" class="user-input-label">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="CVV" class="user-input short-input" />
+      </div>
+    </section>
+
+    <!-- Total Section -->
+    <section class="total">
+      <h2 class="box-title">Total</h2>
+      <table class="totals-table">
+        <tbody>
+          <tr>
+            <td>Subtotal</td>
+            <td>$0.19</td>
+          </tr>
+          <tr>
+            <td>Tea</td>
+            <td>$1.50</td>
+          </tr>
+          <tr class="final-totals">
+            <td><strong>Total</strong></td>
+            <td><strong>$120.50</strong></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="checkout" type="button">Place Order</button>
+    </section>
+  </div>
+</body>
+</html>
